@@ -1,34 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
+<html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <title>Anger Foot Checklist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Checklist for getting all achievements in Anger Foot">
-    <meta name="author" content="Scuffed Jar">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/jstorage.js"></script>
-    <script type="text/javascript">
-        var profilesKey = 'profiles';
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QN8C279EF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-9QN8C279EF');
-    </script>
+  <meta charset="utf-8">
+  <title>Anger Foot Achievement Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/titlecard.ico?">
+  <link rel="apple-touch-icon-precomposed" href="img/titlecard.png">
+  <meta name="description" content="Checklist for getting all achievements in Anger Foot">
+  <meta name="author" content="Scuffed Jar">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
 
     <div class="container">
@@ -43,7 +26,24 @@
             <p>
                 <em>Warning: Contains Spoilers!</em>
             </p>
-
+        </div>
+        
+        <div class="tab-content">
+            <!-- Hide Completed Toggle -->
+            <div class="tab-pane active in" id="btnHideCompleted">
+            <div class="btn-group" role="group" data-toggle="buttons">
+                <label class="btn btn-default">
+                <input type="checkbox" id="toggleHideCompleted">
+                <span class="glyphicon glyphicon-eye-close"></span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                Hide Completed
+                <a class="btn btn-default btn-sm fadingbutton togglehide" onclick="$('#toggleHideCompleted').click();">
+                    <span class="glyphicon glyphicon-eye-close"></span>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    Hide Completed
+                </a>
+                </label>
+            </div>
         </div>
 
         <div class="tab-content">
@@ -137,9 +137,8 @@
 
                 <hr />
 
-                <a name="section_1"></a>
-                <h3>Sneaker Shakedown (Level 1-1) <span id="playthrough_totals_1"></span></h3>
-                <ul>
+                <h3 id="section_1"><a href="#section_1_col" data-toggle="collapse" class="btn btn-collapse"></a>Sneaker Shakedown (Level 1-1)</a> <span id="playthrough_totals_1"></span></h3>
+                <ul id="section_1_col" class="collapse in">
                     <li data-id="playthrough_1_1"> Navigate to the audio settings and turn it to max. (<b>Thunderdome</b>)</a></li>
                     <li data-id="playthrough_1_2"> Do the challenges for this level.</a>
                         <ul>
@@ -150,15 +149,13 @@
                     </li>
                 </ul>
 
-                <a name="section_2"></a>
-                <h3>Homecoming (Level 1-1.5) <span id="playthrough_totals_2"></span></h3>
-                <ul>
+                <h3 id="section_2"><a href="#section_2_col" data-toggle="collapse" class="btn btn-collapse"></a>Homecoming (Level 1-1.5)</a> <span id="playthrough_totals_2"></span></h3>
+                <ul id="section_2_col" class="collapse in">
                     <li data-id="playthrough_2_1"> Kick the TV after your girlfriend expresses excitement for movie night. (<b>I Prefer Books</b>)</a></li>
                 </ul>
 
-                <a name="section_3"></a>
-                <h3>The Chase Begins (Level 1-2) <span id="playthrough_totals_3"></span></h3>
-                <ul>
+                <h3 id="section_3"><a href="#section_3_col" data-toggle="collapse" class="btn btn-collapse"></a>The Chase Begins (Level 1-2)</a> <span id="playthrough_totals_3"></span></h3>
+                <ul id="section_3_col" class="collapse in">
                     <li data-id="playthrough_3_1"> There is a Broforce arcade machine at the end of a hallway with a series of bathrooms. Play it until the machine explodes. (<b>Brogress Quest</b>)</a></li>
                     <li data-id="playthrough_3_2"> Do the challenges for this level.</a>
                         <ul>
@@ -169,9 +166,8 @@
                     </li>
                 </ul>
 
-                <a name="section_4"></a>
-                <h3>Sunny Hill Apartments (Level 1-3) <span id="playthrough_totals_4"></span></h3>
-                <ul>
+                <h3 id="section_4"><a href="#section_4_col" data-toggle="collapse" class="btn btn-collapse"></a>Sunny Hill Apartments (Level 1-3)</a> <span id="playthrough_totals_4"></span></h3>
+                <ul id="section_4_col" class="collapse in">
                     <li data-id="playthrough_4_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_4_1_1"> Skeleton #1 is in a back room. (<a href="https://youtu.be/avRffdPj10o?si=X4ijW0Ps7uOGJgy4">walkthrough</a>)</a></li>
@@ -188,9 +184,8 @@
                     </li>
                 </ul>
 
-                <a name="section_5"></a>
-                <h3>Petrol Party (Level 1-4) <span id="playthrough_totals_5"></span></h3>
-                <ul>
+                <h3 id="section_5"><a href="#section_5_col" data-toggle="collapse" class="btn btn-collapse"></a>Petrol Party (Level 1-4)</a> <span id="playthrough_totals_5"></span></h3>
+                <ul id="section_5_col" class="collapse in">
                     <li data-id="playthrough_5_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_5_1_1"> Skeleton #4 is in a room behind a trash bag. (<a href="https://youtu.be/avRffdPj10o?si=-1cfB671PY5GO1P7&t=31">walkthrough</a>)</a></li>
@@ -205,15 +200,13 @@
                     </li>
                 </ul>
 
-                <a name="section_6"></a>
-                <h3>Back Alleys (Level 1-4.5) <span id="playthrough_totals_6"></span></h3>
-                <ul>
+                <h3 id="section_6"><a href="#section_6_col" data-toggle="collapse" class="btn btn-collapse"></a>Back Alleys (Level 1-4.5)</a> <span id="playthrough_totals_6"></span></h3>
+                <ul id="section_6_col" class="collapse in">
                     <li data-id="playthrough_6_1">Find the soccer ball near the start of this level and kick it into the dumpster. (<b>Eye for Goal</b>)</a></li>
                 </ul>
 
-                <a name="section_7"></a>
-                <h3>Barksdale Manor (Level 1-5) <span id="playthrough_totals_7"></span></h3>
-                <ul>
+                <h3 id="section_7"><a href="#section_7_col" data-toggle="collapse" class="btn btn-collapse"></a>Barksdale Manor (Level 1-5)</a> <span id="playthrough_totals_7"></span></h3>
+                <ul id="section_7_col" class="collapse in">
                     <li data-id="playthrough_7_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_7_1_1"> Complete the level.</a></li>
@@ -223,9 +216,8 @@
                     </li>
                 </ul>
 
-                <a name="section_8"></a>
-                <h3>Pine Tree Heights (Level 1-6) <span id="playthrough_totals_8"></span></h3>
-                <ul>
+                <h3 id="section_8"><a href="#section_8_col" data-toggle="collapse" class="btn btn-collapse"></a>Pine Tree Heights (Level 1-6)</a> <span id="playthrough_totals_8"></span></h3>
+                <ul id="section_8_col" class="collapse in">
                     <li data-id="playthrough_8_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_8_1_1"> Skeleton #5 is behind a cardboard box pile. (<a href="https://youtu.be/avRffdPj10o?si=njIGjNvzwtGRdIpR&t=48">walkthrough</a>)</a></li>
@@ -241,9 +233,8 @@
                     </li>
                 </ul>
 
-                <a name="section_9"></a>
-                <h3>Riot Control (Level 1-7) <span id="playthrough_totals_9"></span></h3>
-                <ul>
+                <h3 id="section_9"><a href="#section_9_col" data-toggle="collapse" class="btn btn-collapse"></a>Riot Control (Level 1-7)</a> <span id="playthrough_totals_9"></span></h3>
+                <ul id="section_9_col" class="collapse in">
                     <li data-id="playthrough_9_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_9_1_1"> Complete the level.</a></li>
@@ -253,9 +244,8 @@
                     </li>
                 </ul>
 
-                <a name="section_10"></a>
-                <h3>Bombing Run (Level 1-8) <span id="playthrough_totals_10"></span></h3>
-                <ul>
+                <h3 id="section_10"><a href="#section_10_col" data-toggle="collapse" class="btn btn-collapse"></a>Bombing Run (Level 1-8)</a> <span id="playthrough_totals_10"></span></h3>
+                <ul id="section_10_col" class="collapse in">
                     <li data-id="playthrough_10_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_10_1_1"> Skeleton #7 is behind a black door. (<a href="https://youtu.be/avRffdPj10o?si=MRHaj9i81d5I2uPZ&t=65">walkthrough</a>)</a></li>
@@ -270,9 +260,8 @@
                     </li>
                 </ul>
 
-                <a name="section_11"></a>
-                <h3>Slum Life (Level 1-8.5) <span id="playthrough_totals_11"></span></h3>
-                <ul>
+                <h3 id="section_11"><a href="#section_11_col" data-toggle="collapse" class="btn btn-collapse"></a>Slum Life (Level 1-8.5)</a> <span id="playthrough_totals_11"></span></h3>
+                <ul id="section_11_col" class="collapse in">
                     <li data-id="playthrough_11_1"> There are two vending machines on this level. Kick them with max settings until the game drops below 20FPS or just limit the max FPS to 10 in settings. (<b>Stress Test</b>)</a></li>
                     <li data-id="playthrough_11_2"> Set off all the fire extinguishers on this level. (<b>Fire Prevention</b>)</a>
                         <ul>
@@ -288,9 +277,8 @@
                     </li>
                 </ul>
 
-                <a name="section_12"></a>
-                <h3>Hothead Hotel (Level 1-9) <span id="playthrough_totals_12"></span></h3>
-                <ul>
+                <h3 id="section_12"><a href="#section_12_col" data-toggle="collapse" class="btn btn-collapse"></a>Hothead Hotel (Level 1-9)</a> <span id="playthrough_totals_12"></span></h3>
+                <ul id="section_12_col" class="collapse in">
                     <li data-id="playthrough_12_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_12_1_1"> Skeleton #8 is behind the stall door in a bathroom. (<a href="https://youtu.be/avRffdPj10o?si=1vSIPW0MEX5cx6VL&t=86">walkthrough</a>)</a></li>
@@ -306,9 +294,8 @@
                     </li>
                 </ul>
 
-                <a name="section_13"></a>
-                <h3>Eastbrooke Suites (Level 1-10) <span id="playthrough_totals_13"></span></h3>
-                <ul>
+                <h3 id="section_13"><a href="#section_13_col" data-toggle="collapse" class="btn btn-collapse"></a>Eastbrooke Suites (Level 1-10)</a> <span id="playthrough_totals_13"></span></h3>
+                <ul id="section_13_col" class="collapse in">
                     <li data-id="playthrough_13_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_13_1_1"> Complete the level.</a></li>
@@ -318,9 +305,8 @@
                     </li>
                 </ul>
 
-                <a name="section_14"></a>
-                <h3>Corridor Crunch (Level 1-11) <span id="playthrough_totals_14"></span></h3>
-                <ul>
+                <h3 id="section_14"><a href="#section_14_col" data-toggle="collapse" class="btn btn-collapse"></a>Corridor Crunch (Level 1-11)</a> <span id="playthrough_totals_14"></span></h3>
+                <ul id="section_14_col" class="collapse in">
                     <li data-id="playthrough_14_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_14_1_1"> Complete the level.</a></li>
@@ -331,15 +317,13 @@
                     </li>
                 </ul>
 
-                <a name="section_15"></a>
-                <h3>The Stairwell (Level 1-11.5) <span id="playthrough_totals_15"></span></h3>
-                <ul>
+                <h3 id="section_15"><a href="#section_15_col" data-toggle="collapse" class="btn btn-collapse"></a>The Stairwell (Level 1-11.5)</a> <span id="playthrough_totals_15"></span></h3>
+                <ul id="section_15_col" class="collapse in">
                     <li data-id="playthrough_15_1"> Jump over the railing into the pool at the start of the level. (<b>Ponte Plunge</b>)</a></li>
                 </ul>
 
-                <a name="section_16"></a>
-                <h3>Going Up (Level 1-12) <span id="playthrough_totals_16"></span></h3>
-                <ul>
+                <h3 id="section_16"><a href="#section_16_col" data-toggle="collapse" class="btn btn-collapse"></a>Going Up (Level 1-12)</a> <span id="playthrough_totals_16"></span></h3>
+                <ul id="section_16_col" class="collapse in">
                     <li data-id="playthrough_16_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_16_1_1"> Complete the level.</a></li>
@@ -349,9 +333,8 @@
                     </li>
                 </ul>
 
-                <a name="section_17"></a>
-                <h3>Narcotomi Towers (Level 1-13) <span id="playthrough_totals_17"></span></h3>
-                <ul>
+                <h3 id="section_17"><a href="#section_17_col" data-toggle="collapse" class="btn btn-collapse"></a>Narcotomi Towers (Level 1-13)</a> <span id="playthrough_totals_17"></span></h3>
+                <ul id="section_17_col" class="collapse in">
                     <li data-id="playthrough_17_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_17_1_1"> Skeleton #10 is after you jump a gap over a sign to the left (you'll need thrusters). (<a href="https://youtu.be/avRffdPj10o?si=1EQNJ3y9r7fV94ye&t=110">walkthrough</a>)</a></li>
@@ -366,9 +349,8 @@
                     </li>
                 </ul>
 
-                <a name="section_18"></a>
-                <h3>Rooftop Rampage (Level 1-14) <span id="playthrough_totals_18"></span></h3>
-                <ul>
+                <h3 id="section_18"><a href="#section_18_col" data-toggle="collapse" class="btn btn-collapse"></a>Rooftop Rampage (Level 1-14)</a> <span id="playthrough_totals_18"></span></h3>
+                <ul id="section_18_col" class="collapse in">
                     <li data-id="playthrough_18_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_18_1_1"> Skeleton #11 is in a bathroom in the apartments. (<a href="https://youtu.be/avRffdPj10o?si=yX5pMYI2L48UTx5o&t=139">walkthrough</a>)</a></li>
@@ -383,9 +365,8 @@
                     </li>
                 </ul>
 
-                <a name="section_19"></a>
-                <h3>Potshots (Level 1-15) <span id="playthrough_totals_19"></span></h3>
-                <ul>
+                <h3 id="section_19"><a href="#section_19_col" data-toggle="collapse" class="btn btn-collapse"></a>Potshots (Level 1-15)</a> <span id="playthrough_totals_19"></span></h3>
+                <ul id="section_19_col" class="collapse in">
                     <li data-id="playthrough_19_1"> At the pool area, jump down and break through the glass. Exit the room and to your left you will see a room of toasters. Once you approach they will launch toast, you need to shoot it mid air. (<b>Quick Draw</b>)</a></li>
                     <li data-id="playthrough_19_2"> Do the challenges for this level.</a>
                         <ul>
@@ -396,15 +377,13 @@
                     </li>
                 </ul>
 
-                <a name="section_20"></a>
-                <h3>Violence Gang Boss (Level 1-15.5) <span id="playthrough_totals_20"></span></h3>
-                <ul>
+                <h3 id="section_20"><a href="#section_20_col" data-toggle="collapse" class="btn btn-collapse"></a>Violence Gang Boss (Level 1-15.5)</a> <span id="playthrough_totals_20"></span></h3>
+                <ul id="section_20_col" class="collapse in">
                     <li data-id="playthrough_20_1"> Defeat the Violence Gang. (<b>Peace Prevails</b>)</a></li>
                 </ul>
 
-                <a name="section_21"></a>
-                <h3>Smog Street (Level 2-0.5) <span id="playthrough_totals_21"></span></h3>
-                <ul>
+                <h3 id="section_21"><a href="#section_21_col" data-toggle="collapse" class="btn btn-collapse"></a>Smog Street (Level 2-0.5)</a> <span id="playthrough_totals_21"></span></h3>
+                <ul id="section_21_col" class="collapse in">
                     <li data-id="playthrough_21_1"> Kick 10 different pigeons. (<b>Pest Control</b>)</a>
                         <ul>
                             <li data-id="playthrough_21_1_1"> The first three are at spawn.</a></li>
@@ -415,9 +394,8 @@
                     </li>
                 </ul>
 
-                <a name="section_22"></a>
-                <h3>Down the Drain (Level 2-1) <span id="playthrough_totals_22"></span></h3>
-                <ul>
+                <h3 id="section_22"><a href="#section_22_col" data-toggle="collapse" class="btn btn-collapse"></a>Down the Drain (Level 2-1)</a> <span id="playthrough_totals_22"></span></h3>
+                <ul id="section_22_col" class="collapse in">
                     <li data-id="playthrough_22_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_22_1_1"> Skeleton #12 is through a window (you'll need size threes). (<a href="https://youtu.be/avRffdPj10o?si=AmhLc1-V5mE-KKo0&t=205">walkthrough</a>)</a></li>
@@ -435,9 +413,8 @@
                     </li>
                 </ul>
 
-                <a name="section_23"></a>
-                <h3>Pipe City (Level 2-2) <span id="playthrough_totals_23"></span></h3>
-                <ul>
+                <h3 id="section_23"><a href="#section_23_col" data-toggle="collapse" class="btn btn-collapse"></a>Pipe City (Level 2-2)</a> <span id="playthrough_totals_23"></span></h3>
+                <ul id="section_23_col" class="collapse in">
                     <li data-id="playthrough_23_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_23_1_1"> Skeleton #16 is behind bars in cells. (<a href="https://youtu.be/avRffdPj10o?si=AYfs3KAi9ARA4vnZ&t=277">walkthrough</a>)</a></li>
@@ -453,9 +430,8 @@
                     </li>
                 </ul>
 
-                <a name="section_24"></a>
-                <h3>The Deep End (Level 2-3) <span id="playthrough_totals_24"></span></h3>
-                <ul>
+                <h3 id="section_24"><a href="#section_24_col" data-toggle="collapse" class="btn btn-collapse"></a>The Deep End (Level 2-3)</a> <span id="playthrough_totals_24"></span></h3>
+                <ul id="section_24_col" class="collapse in">
                     <li data-id="playthrough_24_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_24_1_1"> Complete the level.</a></li>
@@ -465,9 +441,8 @@
                     </li>
                 </ul>
 
-                <a name="section_25"></a>
-                <h3>Steam Sewer (Level 2-4) <span id="playthrough_totals_25"></span></h3>
-                <ul>
+                <h3 id="section_25"><a href="#section_25_col" data-toggle="collapse" class="btn btn-collapse"></a>Steam Sewer (Level 2-4)</a> <span id="playthrough_totals_25"></span></h3>
+                <ul id="section_25_col" class="collapse in">
                     <li data-id="playthrough_25_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_25_1_1"> Skeleton #18 is behind a fence. (<a href="https://youtu.be/avRffdPj10o?si=2QzmayZn5quURHw3&t=291">walkthrough</a>)</a></li>
@@ -486,16 +461,14 @@
                     </li>
                 </ul>
 
-                <a name="section_26"></a>
-                <h3>Dumpster Town (Level 2-4.5) <span id="playthrough_totals_26"></span></h3>
-                <ul>
+                <h3 id="section_26"><a href="#section_26_col" data-toggle="collapse" class="btn btn-collapse"></a>Dumpster Town (Level 2-4.5)</a> <span id="playthrough_totals_26"></span></h3>
+                <ul id="section_26_col" class="collapse in">
                     <li data-id="playthrough_26_1"> You need to drink two beers, an energy drink, and eat a lizard. There are beers located by the #8 sign and energy drinks and a lizard near the #4 sign. (<b>Intervention Required</b>)</a></li>
                     <li data-id="playthrough_26_2"> Interact with a lizard on the wall and then run to the recycle bin. At the end of the animation you'll throw the lizard remains, aim for the recycle bin. (<b>Reptilian Recycling</b>)</a></li>
                 </ul>
 
-                <a name="section_27"></a>
-                <h3>The Slime Pits (Level 2-5) <span id="playthrough_totals_27"></span></h3>
-                <ul>
+                <h3 id="section_27"><a href="#section_27_col" data-toggle="collapse" class="btn btn-collapse"></a>The Slime Pits (Level 2-5)</a> <span id="playthrough_totals_27"></span></h3>
+                <ul id="section_27_col" class="collapse in">
                     <li data-id="playthrough_27_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_27_1_1"> Skeleton #22 is chilling on a couch. (<a href="https://youtu.be/avRffdPj10o?si=HHhmcynEaOP8Lv1v&t=319">walkthrough</a>)</a></li>
@@ -516,9 +489,8 @@
                     </li>
                 </ul>
 
-                <a name="section_28"></a>
-                <h3>Slithering Canals (Level 2-6) <span id="playthrough_totals_28"></span></h3>
-                <ul>
+                <h3 id="section_28"><a href="#section_28_col" data-toggle="collapse" class="btn btn-collapse"></a>Slithering Canals (Level 2-6)</a> <span id="playthrough_totals_28"></span></h3>
+                <ul id="section_28_col" class="collapse in">
                     <li data-id="playthrough_28_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_28_1_1"> Complete the level.</a></li>
@@ -528,9 +500,8 @@
                     </li>
                 </ul>
 
-                <a name="section_29"></a>
-                <h3>Pollution Penitentiary (Level 2-7) <span id="playthrough_totals_29"></span></h3>
-                <ul>
+                <h3 id="section_29"><a href="#section_29_col" data-toggle="collapse" class="btn btn-collapse"></a>Pollution Penitentiary (Level 2-7)</a> <span id="playthrough_totals_29"></span></h3>
+                <ul id="section_29_col" class="collapse in">
                     <li data-id="playthrough_29_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_29_1_1"> Skeleton #28 is twisting a valve. (<a href="https://youtu.be/avRffdPj10o?si=e4vG3BeXaPrTwg2q&t=369">walkthrough</a>)</a></li>
@@ -545,15 +516,13 @@
                     </li>
                 </ul>
 
-                <a name="section_30"></a>
-                <h3> Trash Mountain (Level 2-7.5) <span id="playthrough_totals_30"></span></h3>
-                <ul>
+                <h3 id="section_30"><a href="#section_30_col" data-toggle="collapse" class="btn btn-collapse"></a>Trash Mountain (Level 2-7.5)</a> <span id="playthrough_totals_30"></span></h3>
+                <ul id="section_30_col" class="collapse in">
                     <li data-id="playthrough_30_1"> Kick the barrel that the goon is dumping during this level. (<b>Couldn't Resist</b>)</a></li>
                 </ul>
 
-                <a name="section_31"></a>
-                <h3>The Septic Pools (Level 2-8) <span id="playthrough_totals_31"></span></h3>
-                <ul>
+                <h3 id="section_31"><a href="#section_31_col" data-toggle="collapse" class="btn btn-collapse"></a>The Septic Pools (Level 2-8)</a> <span id="playthrough_totals_31"></span></h3>
+                <ul id="section_31_col" class="collapse in">
                     <li data-id="playthrough_31_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_31_1_1"> Skeleton #29 is sitting on a pipe above the sewage. (<a href="https://youtu.be/avRffdPj10o?si=K8HTev-qm_mjm3eS&t=380">walkthrough</a>)</a></li>
@@ -568,9 +537,8 @@
                     </li>
                 </ul>
 
-                <a name="section_32"></a>
-                <h3>Clogged (Level 2-9) <span id="playthrough_totals_32"></span></h3>
-                <ul>
+                <h3 id="section_32"><a href="#section_32_col" data-toggle="collapse" class="btn btn-collapse"></a>Clogged (Level 2-9)</a> <span id="playthrough_totals_32"></span></h3>
+                <ul id="section_32_col" class="collapse in">
                     <li data-id="playthrough_32_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_32_1_1"> Complete the level.</a></li>
@@ -580,9 +548,8 @@
                     </li>
                 </ul>
 
-                <a name="section_33"></a>
-                <h3>Poo Gutter (Level 2-10) <span id="playthrough_totals_33"></span></h3>
-                <ul>
+                <h3 id="section_33"><a href="#section_33_col" data-toggle="collapse" class="btn btn-collapse"></a>Poo Gutter (Level 2-10)</a> <span id="playthrough_totals_33"></span></h3>
+                <ul id="section_33_col" class="collapse in">
                     <li data-id="playthrough_33_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_33_1_1"> Skeleton #30 is using the bathroom. (<a href="https://youtu.be/avRffdPj10o?si=_Kov_G3O6fM_Cs1Q&t=397">walkthrough</a>)</a></li>
@@ -599,15 +566,13 @@
                     </li>
                 </ul>
 
-                <a name="section_34"></a>
-                <h3>Green River Laboratory (Level 2-10.5) <span id="playthrough_totals_34"></span></h3>
-                <ul>
+                <h3 id="section_34"><a href="#section_34_col" data-toggle="collapse" class="btn btn-collapse"></a>Green River Laboratory (Level 2-10.5)</a> <span id="playthrough_totals_34"></span></h3>
+                <ul id="section_34_col" class="collapse in">
                     <li data-id="playthrough_34_1"> Kick the glass containing experiment #3 to free them. Find it behind the enclosure and speak to them. (<b>Make It Stop</b>)</a></li>
                 </ul>
 
-                <a name="section_35"></a>
-                <h3>Containment Breach (Level 2-11) <span id="playthrough_totals_35"></span></h3>
-                <ul>
+                <h3 id="section_35"><a href="#section_35_col" data-toggle="collapse" class="btn btn-collapse"></a>Containment Breach (Level 2-11)</a> <span id="playthrough_totals_35"></span></h3>
+                <ul id="section_35_col" class="collapse in">
                     <li data-id="playthrough_35_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_35_1_1"> Skeleton #33 is getting sewage tortured. (<a href="https://youtu.be/avRffdPj10o?si=TQq0JXzHMTucXljJ&t=438">walkthrough</a>)</a></li>
@@ -622,9 +587,8 @@
                     </li>
                 </ul>
 
-                <a name="section_36"></a>
-                <h3>Experimental Facility (Level 2-12) <span id="playthrough_totals_36"></span></h3>
-                <ul>
+                <h3 id="section_36"><a href="#section_36_col" data-toggle="collapse" class="btn btn-collapse"></a>Experimental Facility (Level 2-12)</a> <span id="playthrough_totals_36"></span></h3>
+                <ul id="section_36_col" class="collapse in">
                     <li data-id="playthrough_36_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_36_1_1"> Skeleton #34 is hanging to an electric box. (<a href="https://youtu.be/avRffdPj10o?si=3ZPf5oxW_kSP2-e_&t=461">walkthrough</a>)</a></li>
@@ -639,9 +603,8 @@
                     </li>
                 </ul>
 
-                <a name="section_37"></a>
-                <h3>Tentacle Teardown (Level 2-13) <span id="playthrough_totals_37"></span></h3>
-                <ul>
+                <h3 id="section_37"><a href="#section_37_col" data-toggle="collapse" class="btn btn-collapse"></a>Tentacle Teardown (Level 2-13)</a> <span id="playthrough_totals_37"></span></h3>
+                <ul id="section_37_col" class="collapse in">
                     <li data-id="playthrough_37_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_37_1_1"> Skeleton #35 is sitting down. (<a href="https://youtu.be/avRffdPj10o?si=6J_PoOAnSeUa2bq4&t=484">walkthrough</a>)</a></li>
@@ -657,21 +620,18 @@
                     </li>
                 </ul>
 
-                <a name="section_38"></a>
-                <h3>Pollution Gang Boss (Level 2-13.5) <span id="playthrough_totals_38"></span></h3>
-                <ul>
+                <h3 id="section_38"><a href="#section_38_col" data-toggle="collapse" class="btn btn-collapse"></a>Pollution Gang Boss (Level 2-13.5)</a> <span id="playthrough_totals_38"></span></h3>
+                <ul id="section_38_col" class="collapse in">
                     <li data-id="playthrough_38_1"> Defeat the Pollution Gang. (<b>Captain Planet</b>)</a></li>
                 </ul>
 
-                <a name="section_39"></a>
-                <h3>A Fresh Start (Level 3-0.5) <span id="playthrough_totals_39"></span></h3>
-                <ul>
+                <h3 id="section_39"><a href="#section_39_col" data-toggle="collapse" class="btn btn-collapse"></a>A Fresh Start (Level 3-0.5)</a> <span id="playthrough_totals_39"></span></h3>
+                <ul id="section_39_col" class="collapse in">
                     <li data-id="playthrough_39_1"> Proceed forward from spawn and take the first left. There's a hidden area underwater, emerge and kick the valve handle. (<b>Unplugged</b>)</a></li>
                 </ul>
 
-                <a name="section_40"></a>
-                <h3>Transit Hub (Level 3-1) <span id="playthrough_totals_40"></span></h3>
-                <ul>
+                <h3 id="section_40"><a href="#section_40_col" data-toggle="collapse" class="btn btn-collapse"></a>Transit Hub (Level 3-1)</a> <span id="playthrough_totals_40"></span></h3>
+                <ul id="section_40_col" class="collapse in">
                     <li data-id="playthrough_40_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_40_1_1"> Skeleton #37 is stuck on an escalator. (<a href="https://youtu.be/avRffdPj10o?si=44f8reKN14Wocvl6&t=557">walkthrough</a>)</a></li>
@@ -686,9 +646,8 @@
                     </li>
                 </ul>
 
-                <a name="section_41"></a>
-                <h3>The Trainyard (Level 3-2) <span id="playthrough_totals_41"></span></h3>
-                <ul>
+                <h3 id="section_41"><a href="#section_41_col" data-toggle="collapse" class="btn btn-collapse"></a>The Trainyard (Level 3-2)</a> <span id="playthrough_totals_41"></span></h3>
+                <ul id="section_41_col" class="collapse in">
                     <li data-id="playthrough_41_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_41_1_1"> Skeleton #38 is behind a stall. (<a href="https://youtu.be/avRffdPj10o?si=I8o38v-8TR2Lf5-_&t=626">walkthrough</a>)</a></li>
@@ -703,9 +662,8 @@
                     </li>
                 </ul>
 
-                <a name="section_42"></a>
-                <h3>Derailed (Level 3-3) <span id="playthrough_totals_42"></span></h3>
-                <ul>
+                <h3 id="section_42"><a href="#section_42_col" data-toggle="collapse" class="btn btn-collapse"></a>Derailed (Level 3-3)</a> <span id="playthrough_totals_42"></span></h3>
+                <ul id="section_42_col" class="collapse in">
                     <li data-id="playthrough_42_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_42_1_1"> Skeleton #39 is under the escalator. (<a href="https://youtu.be/avRffdPj10o?si=KtvTl9a5gafYsiNW&t=685">walkthrough</a>)</a></li>
@@ -720,9 +678,8 @@
                     </li>
                 </ul>
 
-                <a name="section_43"></a>
-                <h3>Entry Level Position (Level 3-4) <span id="playthrough_totals_43"></span></h3>
-                <ul>
+                <h3 id="section_43"><a href="#section_43_col" data-toggle="collapse" class="btn btn-collapse"></a>Entry Level Position (Level 3-4)</a> <span id="playthrough_totals_43"></span></h3>
+                <ul id="section_43_col" class="collapse in">
                     <li data-id="playthrough_43_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_43_1_1"> Skeleton #40 is over a railing on the side of the level (you'll need thrusters). (<a href="https://youtu.be/avRffdPj10o?si=rZWn-7Po-cc8JVkD&t=710">walkthrough</a>)</a></li>
@@ -740,9 +697,8 @@
                     </li>
                 </ul>
 
-                <a name="section_44"></a>
-                <h3>Glass Ceilings (Level 3-5) <span id="playthrough_totals_44"></span></h3>
-                <ul>
+                <h3 id="section_44"><a href="#section_44_col" data-toggle="collapse" class="btn btn-collapse"></a>Glass Ceilings (Level 3-5)</a> <span id="playthrough_totals_44"></span></h3>
+                <ul id="section_44_col" class="collapse in">
                     <li data-id="playthrough_44_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_44_1_1"> Skeleton #44 is a cubical. (<a href="https://youtu.be/avRffdPj10o?si=bT5GHFESeX3Op-vE&t=732">walkthrough</a>)</a></li>
@@ -758,9 +714,8 @@
                     </li>
                 </ul>
 
-                <a name="section_45"></a>
-                <h3>Office Space (Level 3-5.5) <span id="playthrough_totals_45"></span></h3>
-                <ul>
+                <h3 id="section_45"><a href="#section_45_col" data-toggle="collapse" class="btn btn-collapse"></a>Office Space (Level 3-5.5)</a> <span id="playthrough_totals_45"></span></h3>
+                <ul id="section_45_col" class="collapse in">
                 <li data-id="playthrough_45_1"> Kick / shoot the skeletons.</a>
                     <ul>
                         <li data-id="playthrough_45_1_1"> Skeleton #46 is up in the ceiling space. (<a href="https://youtu.be/avRffdPj10o?si=_BQy1pd5yWFBSigM&t=763">walkthrough</a>)</a></li>
@@ -768,9 +723,8 @@
                 <li data-id="playthrough_45_2"> Speak to the receptionist. Take the door to the right and use the escalator. (<b>Feedback Appreciated</b>)</a></li>
                 </ul>
 
-                <a name="section_46"></a>
-                <h3>The Bullpen (Level 3-6) <span id="playthrough_totals_46"></span></h3>
-                <ul>
+                <h3 id="section_46"><a href="#section_46_col" data-toggle="collapse" class="btn btn-collapse"></a>The Bullpen (Level 3-6)</a> <span id="playthrough_totals_46"></span></h3>
+                <ul id="section_46_col" class="collapse in">
                     <li data-id="playthrough_46_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_46_1_1"> Skeleton #47 is leaning on the glass pane. (<a href="https://youtu.be/avRffdPj10o?si=CmuUMM4vvuQvBAOd&t=777">walkthrough</a>)</a></li>
@@ -785,9 +739,8 @@
                     </li>
                 </ul>
 
-                <a name="section_47"></a>
-                <h3>Bear Market (Level 3-7) <span id="playthrough_totals_47"></span></h3>
-                <ul>
+                <h3 id="section_47"><a href="#section_47_col" data-toggle="collapse" class="btn btn-collapse"></a>Bear Market (Level 3-7)</a> <span id="playthrough_totals_47"></span></h3>
+                <ul id="section_47_col" class="collapse in">
                     <li data-id="playthrough_47_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_47_1_1"> Skeleton #48 is behind some garbage running on a wheel. (<a href="https://youtu.be/avRffdPj10o?si=43lXE-1cw7C3498M&t=790">walkthrough</a>)</a></li>
@@ -802,9 +755,8 @@
                     </li>
                 </ul>
 
-                <a name="section_48"></a>
-                <h3>Elevator Hell (Level 3-8) <span id="playthrough_totals_48"></span></h3>
-                <ul>
+                <h3 id="section_48"><a href="#section_48_col" data-toggle="collapse" class="btn btn-collapse"></a>Elevator Hell (Level 3-8)</a> <span id="playthrough_totals_48"></span></h3>
+                <ul id="section_48_col" class="collapse in">
                     <li data-id="playthrough_48_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_48_1_1"> Skeleton #49 is DJ-ing in a closet. (<a href="https://youtu.be/avRffdPj10o?si=pxBC2pofyik7r90l&t=823">walkthrough</a>)</a></li>
@@ -819,9 +771,8 @@
                     </li>
                 </ul>
 
-                <a name="section_49"></a>
-                <h3>Market Forces (Level 3-9) <span id="playthrough_totals_49"></span></h3>
-                <ul>
+                <h3 id="section_49"><a href="#section_49_col" data-toggle="collapse" class="btn btn-collapse"></a>Market Forces (Level 3-9)</a> <span id="playthrough_totals_49"></span></h3>
+                <ul id="section_49_col" class="collapse in">
                     <li data-id="playthrough_49_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_49_1_1"> Complete the level.</a></li>
@@ -831,15 +782,13 @@
                     </li>
                 </ul>
 
-                <a name="section_50"></a>
-                <h3>Employee Wellness (Level 3-9.5) <span id="playthrough_totals_50"></span></h3>
-                <ul>
+                <h3 id="section_50"><a href="#section_50_col" data-toggle="collapse" class="btn btn-collapse"></a>Employee Wellness (Level 3-9.5)</a> <span id="playthrough_totals_50"></span></h3>
+                <ul id="section_50_col" class="collapse in">
                     <li data-id="playthrough_50_1"> Talk to the employee hiding in the ball pit under the slide. (<b>Hide and Seek</b>)</a></li>
                 </ul>
 
-                <a name="section_51"></a>
-                <h3>Supply Chain (Level 3-10) <span id="playthrough_totals_51"></span></h3>
-                <ul>
+                <h3 id="section_51"><a href="#section_51_col" data-toggle="collapse" class="btn btn-collapse"></a>Supply Chain (Level 3-10)</a> <span id="playthrough_totals_51"></span></h3>
+                <ul id="section_51_col" class="collapse in">
                     <li data-id="playthrough_51_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_51_1_1"> Skeleton #50 is hanging from a pipe (you'll need thrusters). (<a href="https://youtu.be/avRffdPj10o?si=6aKxoxM4Y5DUT7-_&t=867">walkthrough</a>)</a></li>
@@ -855,9 +804,8 @@
                     </li>
                 </ul>
 
-                <a name="section_52"></a>
-                <h3>Booming Industry (Level 3-11) <span id="playthrough_totals_52"></span></h3>
-                <ul>
+                <h3 id="section_52"><a href="#section_52_col" data-toggle="collapse" class="btn btn-collapse"></a>Booming Industry (Level 3-11)</a> <span id="playthrough_totals_52"></span></h3>
+                <ul id="section_52_col" class="collapse in">
                     <li data-id="playthrough_52_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_52_1_1"> Skeleton #52 is sitting at a water dispenser. (<a href="https://youtu.be/avRffdPj10o?si=UIYh-9GoJ3iB1cdR&t=884">walkthrough</a>)</a></li>
@@ -876,9 +824,8 @@
                     </li>
                 </ul>
 
-                <a name="section_53"></a>
-                <h3>Corporate Takeover (Level 3-12) <span id="playthrough_totals_53"></span></h3>
-                <ul>
+                <h3 id="section_53"><a href="#section_53_col" data-toggle="collapse" class="btn btn-collapse"></a>Corporate Takeover (Level 3-12)</a> <span id="playthrough_totals_53"></span></h3>
+                <ul id="section_53_col" class="collapse in">
                     <li data-id="playthrough_53_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_53_1_1"> Complete the level.</a></li>
@@ -888,9 +835,8 @@
                     </li>
                 </ul>
 
-                <a name="section_54"></a>
-                <h3>Import Extort (Level 3-13) <span id="playthrough_totals_54"></span></h3>
-                <ul>
+                <h3 id="section_54"><a href="#section_54_col" data-toggle="collapse" class="btn btn-collapse"></a>Import Extort (Level 3-13)</a> <span id="playthrough_totals_54"></span></h3>
+                <ul id="section_54_col" class="collapse in">
                     <li data-id="playthrough_54_1"> Kick / shoot the skeletons.</a>
                         <ul>
                             <li data-id="playthrough_54_1_1"> Skeleton #57 is behind a crack in the wall hidden by cardboard (you'll need thrusters). (<a href="https://youtu.be/avRffdPj10o?si=E3jnRjjS7yPMs0nI&t=919">walkthrough</a>)</a></li>
@@ -908,15 +854,13 @@
                     </li>
                 </ul>
 
-                <a name="section_55"></a>
-                <h3>Upper Management (Level 3-13.5) <span id="playthrough_totals_55"></span></h3>
-                <ul>
+                <h3 id="section_55"><a href="#section_55_col" data-toggle="collapse" class="btn btn-collapse"></a>Upper Management (Level 3-13.5)</a> <span id="playthrough_totals_55"></span></h3>
+                <ul id="section_55_col" class="collapse in">
                     <li data-id="playthrough_55_1"> Follow the exit sign and take the escalator. (<b>Defiance</b>)</a></li>
                 </ul>
 
-                <a name="section_56"></a>
-                <h3>Glock Exchange (Level 3-14) <span id="playthrough_totals_56"></span></h3>
-                <ul>
+                <h3 id="section_56"><a href="#section_56_col" data-toggle="collapse" class="btn btn-collapse"></a>Glock Exchange (Level 3-14)</a> <span id="playthrough_totals_56"></span></h3>
+                <ul id="section_56_col" class="collapse in">
                     <li data-id="playthrough_56_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_56_1_1"> Complete the level.</a></li>
@@ -926,9 +870,8 @@
                     </li>
                 </ul>
 
-                <a name="section_57"></a>
-                <h3>Executive Order (Level 3-15) <span id="playthrough_totals_57"></span></h3>
-                <ul>
+                <h3 id="section_57"><a href="#section_57_col" data-toggle="collapse" class="btn btn-collapse"></a>Executive Order (Level 3-15)</a> <span id="playthrough_totals_57"></span></h3>
+                <ul id="section_57_col" class="collapse in">
                     <li data-id="playthrough_57_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_57_1_1"> Complete the level.</a></li>
@@ -938,21 +881,18 @@
                     </li>
                 </ul>
 
-                <a name="section_58"></a>
-                <h3>Business Gang Boss (Level 3-15.5) <span id="playthrough_totals_58"></span></h3>
-                <ul>
+                <h3 id="section_58"><a href="#section_58_col" data-toggle="collapse" class="btn btn-collapse"></a>Business Gang Boss (Level 3-15.5)</a> <span id="playthrough_totals_58"></span></h3>
+                <ul id="section_58_col" class="collapse in">
                     <li data-id="playthrough_58_1"> Defeat the Business Gang. (<b>Bankruptcy</b>)</a></li>
                 </ul>
 
-                <a name="section_59"></a>
-                <h3>The Secret Entrance (Level 4-0.5) <span id="playthrough_totals_59"></span></h3>
-                <ul>
+                <h3 id="section_59"><a href="#section_59_col" data-toggle="collapse" class="btn btn-collapse"></a>The Secret Entrance (Level 4-0.5)</a> <span id="playthrough_totals_59"></span></h3>
+                <ul id="section_59_col" class="collapse in">
                     <li data-id="playthrough_59_1"> Kick a piece of art in the gallery. (<b>Not Impressed</b>)</a></li>
                 </ul>
 
-                <a name="section_60"></a>
-                <h3>Club Debauchery (Level 4-1) <span id="playthrough_totals_60"></span></h3>
-                <ul>
+                <h3 id="section_60"><a href="#section_60_col" data-toggle="collapse" class="btn btn-collapse"></a>Club Debauchery (Level 4-1)</a> <span id="playthrough_totals_60"></span></h3>
+                <ul id="section_60_col" class="collapse in">
                     <li data-id="playthrough_60_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_60_1_1"> Complete the level.</a></li>
@@ -962,9 +902,8 @@
                     </li>
                 </ul>
 
-                <a name="section_61"></a>
-                <h3>Deep Dish Depravity (Level 4-2) <span id="playthrough_totals_61"></span></h3>
-                <ul>
+                <h3 id="section_61"><a href="#section_61_col" data-toggle="collapse" class="btn btn-collapse"></a>Deep Dish Depravity (Level 4-2)</a> <span id="playthrough_totals_61"></span></h3>
+                <ul id="section_61_col" class="collapse in">
                     <li data-id="playthrough_61_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_61_1_1"> Complete the level.</a></li>
@@ -974,9 +913,8 @@
                     </li>
                 </ul>
 
-                <a name="section_62"></a>
-                <h3>High Stakes (Level 4-3) <span id="playthrough_totals_62"></span></h3>
-                <ul>
+                <h3 id="section_62"><a href="#section_62_col" data-toggle="collapse" class="btn btn-collapse"></a>High Stakes (Level 4-3)</a> <span id="playthrough_totals_62"></span></h3>
+                <ul id="section_62_col" class="collapse in">
                     <li data-id="playthrough_62_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_62_1_1"> Complete the level.</a></li>
@@ -986,9 +924,8 @@
                     </li>
                 </ul>
 
-                <a name="section_63"></a>
-                <h3>Deplorable Dungeon (Level 4-4) <span id="playthrough_totals_63"></span></h3>
-                <ul>
+                <h3 id="section_63"><a href="#section_63_col" data-toggle="collapse" class="btn btn-collapse"></a>Deplorable Dungeon (Level 4-4)</a> <span id="playthrough_totals_63"></span></h3>
+                <ul id="section_63_col" class="collapse in">
                     <li data-id="playthrough_63_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_63_1_1"> Complete the level.</a></li>
@@ -998,15 +935,13 @@
                     </li>
                 </ul>
 
-                <a name="section_64"></a>
-                <h3>The Pizza District (Level 4-4.5) <span id="playthrough_totals_64"></span></h3>
-                <ul>
+                <h3 id="section_64"><a href="#section_64_col" data-toggle="collapse" class="btn btn-collapse"></a>The Pizza District (Level 4-4.5)</a> <span id="playthrough_totals_64"></span></h3>
+                <ul id="section_64_col" class="collapse in">
                     <li data-id="playthrough_64_1"> Walk through the cheese fountain to discover a secret area and kick the valve handle. (<b>Where Do They Come From?</b>)</a></li>
                 </ul>
 
-                <a name="section_65"></a>
-                <h3>Sinful Celebration (Level 4-5) <span id="playthrough_totals_65"></span></h3>
-                <ul>
+                <h3 id="section_65"><a href="#section_65_col" data-toggle="collapse" class="btn btn-collapse"></a>Sinful Celebration (Level 4-5)</a> <span id="playthrough_totals_65"></span></h3>
+                <ul id="section_65_col" class="collapse in">
                     <li data-id="playthrough_65_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_65_1_1"> Complete the level.</a></li>
@@ -1016,9 +951,8 @@
                     </li>
                 </ul>
 
-                <a name="section_66"></a>
-                <h3>Crawlspace (Level 4-6) <span id="playthrough_totals_66"></span></h3>
-                <ul>
+                <h3 id="section_66"><a href="#section_66_col" data-toggle="collapse" class="btn btn-collapse"></a>Crawlspace (Level 4-6)</a> <span id="playthrough_totals_66"></span></h3>
+                <ul id="section_66_col" class="collapse in">
                     <li data-id="playthrough_66_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_66_1_1"> Complete the level.</a></li>
@@ -1028,9 +962,8 @@
                     </li>
                 </ul>
 
-                <a name="section_67"></a>
-                <h3>Firepit (Level 4-7) <span id="playthrough_totals_67"></span></h3>
-                <ul>
+                <h3 id="section_67"><a href="#section_67_col" data-toggle="collapse" class="btn btn-collapse"></a>Firepit (Level 4-7)</a> <span id="playthrough_totals_67"></span></h3>
+                <ul id="section_67_col" class="collapse in">
                     <li data-id="playthrough_67_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_67_1_1"> Complete the level.</a></li>
@@ -1040,9 +973,8 @@
                     </li>
                 </ul>
 
-                <a name="section_68"></a>
-                <h3>Pie in the Sky (Level 4-8) <span id="playthrough_totals_68"></span></h3>
-                <ul>
+                <h3 id="section_68"><a href="#section_68_col" data-toggle="collapse" class="btn btn-collapse"></a>Pie in the Sky (Level 4-8)</a> <span id="playthrough_totals_68"></span></h3>
+                <ul id="section_68_col" class="collapse in">
                     <li data-id="playthrough_68_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_68_1_1"> Complete the level.</a></li>
@@ -1052,15 +984,13 @@
                     </li>
                 </ul>
 
-                <a name="section_69"></a>
-                <h3>The Clubs (Level 4-8.5) <span id="playthrough_totals_69"></span></h3>
-                <ul>
+                <h3 id="section_69"><a href="#section_69_col" data-toggle="collapse" class="btn btn-collapse"></a>The Clubs (Level 4-8.5)</a> <span id="playthrough_totals_69"></span></h3>
+                <ul id="section_69_col" class="collapse in">
                     <li data-id="playthrough_69_1"> Enter Club Indulgence, go to the purple door to the right and jump down the pole hole. (<b>Where Do They Go?</b>)</a></li>
                 </ul>
 
-                <a name="section_70"></a>
-                <h3>Pit Party (Level 4-9) <span id="playthrough_totals_70"></span></h3>
-                <ul>
+                <h3 id="section_70"><a href="#section_70_col" data-toggle="collapse" class="btn btn-collapse"></a>Pit Party (Level 4-9)</a> <span id="playthrough_totals_70"></span></h3>
+                <ul id="section_70_col" class="collapse in">
                     <li data-id="playthrough_70_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_70_1_1"> Complete the level.</a></li>
@@ -1070,9 +1000,8 @@
                     </li>
                 </ul>
 
-                <a name="section_71"></a>
-                <h3>Mozzarella Riviera (Level 4-10) <span id="playthrough_totals_71"></span></h3>
-                <ul>
+                <h3 id="section_71"><a href="#section_71_col" data-toggle="collapse" class="btn btn-collapse"></a>Mozzarella Riviera (Level 4-10)</a> <span id="playthrough_totals_71"></span></h3>
+                <ul id="section_71_col" class="collapse in">
                     <li data-id="playthrough_71_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_71_1_1"> Complete the level.</a></li>
@@ -1082,15 +1011,13 @@
                     </li>
                 </ul>
 
-                <a name="section_72"></a>
-                <h3>The Cult of The Pig (Level 4-10.5) <span id="playthrough_totals_72"></span></h3>
-                <ul>
+                <h3 id="section_72"><a href="#section_72_col" data-toggle="collapse" class="btn btn-collapse"></a>The Cult of The Pig (Level 4-10.5)</a> <span id="playthrough_totals_72"></span></h3>
+                <ul id="section_72_col" class="collapse in">
                     <li data-id="playthrough_72_1"> Proceed through the tunnels on either side of the statue, take the first left through the wooden door and jump into the pool. (<b>Fried and Battered</b>)</a></li>
                 </ul>
 
-                <a name="section_73"></a>
-                <h3>Dancefloor Decadence (Level 4-11) <span id="playthrough_totals_73"></span></h3>
-                <ul>
+                <h3 id="section_73"><a href="#section_73_col" data-toggle="collapse" class="btn btn-collapse"></a>Dancefloor Decadence (Level 4-11)</a> <span id="playthrough_totals_73"></span></h3>
+                <ul id="section_73_col" class="collapse in">
                     <li data-id="playthrough_73_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_73_1_1"> Complete the level.</a></li>
@@ -1100,9 +1027,8 @@
                     </li>
                 </ul>
 
-                <a name="section_74"></a>
-                <h3>Sensual Delights (Level 4-12) <span id="playthrough_totals_74"></span></h3>
-                <ul>
+                <h3 id="section_74"><a href="#section_74_col" data-toggle="collapse" class="btn btn-collapse"></a>Sensual Delights (Level 4-12)</a> <span id="playthrough_totals_74"></span></h3>
+                <ul id="section_74_col" class="collapse in">
                     <li data-id="playthrough_74_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_74_1_1"> Complete the level.</a></li>
@@ -1112,9 +1038,8 @@
                     </li>
                 </ul>
 
-                <a name="section_75"></a>
-                <h3>Unholy Halls (Level 4-13) <span id="playthrough_totals_75"></span></h3>
-                <ul>
+                <h3 id="section_75"><a href="#section_75_col" data-toggle="collapse" class="btn btn-collapse"></a>Unholy Halls (Level 4-13)</a> <span id="playthrough_totals_75"></span></h3>
+                <ul id="section_75_col" class="collapse in">
                     <li data-id="playthrough_75_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_75_1_1"> Complete the level.</a></li>
@@ -1124,15 +1049,13 @@
                     </li>
                 </ul>
 
-                <a name="section_76"></a>
-                <h3>Debauchery Gang Boss (Level 4-13.5) <span id="playthrough_totals_76"></span></h3>
-                <ul>
+                <h3 id="section_76"><a href="#section_76_col" data-toggle="collapse" class="btn btn-collapse"></a>Debauchery Gang Boss (Level 4-13.5)</a> <span id="playthrough_totals_76"></span></h3>
+                <ul id="section_76_col" class="collapse in">
                     <li data-id="playthrough_76_1"> Defeat the Debauchery Gang (<b>Prudish</b>)</a>
                 </ul>
 
-                <a name="section_77"></a>
-                <h3>Put Foot (Level 5-1) <span id="playthrough_totals_77"></span></h3>
-                <ul>
+                <h3 id="section_77"><a href="#section_77_col" data-toggle="collapse" class="btn btn-collapse"></a>Put Foot (Level 5-1)</a> <span id="playthrough_totals_77"></span></h3>
+                <ul id="section_77_col" class="collapse in">
                     <li data-id="playthrough_77_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_77_1_1"> Complete the level.</a></li>
@@ -1142,9 +1065,8 @@
                     </li>
                 </ul>
 
-                <a name="section_78"></a>
-                <h3>Crime Tower (Level 5-2) <span id="playthrough_totals_78"></span></h3>
-                <ul>
+                <h3 id="section_78"><a href="#section_78_col" data-toggle="collapse" class="btn btn-collapse"></a>Crime Tower (Level 5-2)</a> <span id="playthrough_totals_78"></span></h3>
+                <ul id="section_78_col" class="collapse in">
                     <li data-id="playthrough_78_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_78_1_1"> Complete the level.</a></li>
@@ -1154,9 +1076,8 @@
                     </li>
                 </ul>
 
-                <a name="section_79"></a>
-                <h3>Municipal Mayhem (Level 5-3) <span id="playthrough_totals_79"></span></h3>
-                <ul>
+                <h3 id="section_79"><a href="#section_79_col" data-toggle="collapse" class="btn btn-collapse"></a>Municipal Mayhem (Level 5-3)</a> <span id="playthrough_totals_79"></span></h3>
+                <ul id="section_79_col" class="collapse in">
                     <li data-id="playthrough_79_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_79_1_1"> Complete the level.</a></li>
@@ -1166,9 +1087,8 @@
                     </li>
                 </ul>
 
-                <a name="section_80"></a>
-                <h3>The Final Kick (Level 5-4) <span id="playthrough_totals_80"></span></h3>
-                <ul>
+                <h3 id="section_80"><a href="#section_80_col" data-toggle="collapse" class="btn btn-collapse"></a>The Final Kick (Level 5-4)</a> <span id="playthrough_totals_80"></span></h3>
+                <ul id="section_80_col" class="collapse in">
                     <li data-id="playthrough_80_1"> Do the challenges for this level.</a>
                         <ul>
                             <li data-id="playthrough_80_1_1"> Complete the level.</a></li>
@@ -1178,9 +1098,8 @@
                     </li>
                 </ul>
 
-                <a name="section_81"></a>
-                <h3>Ending (Level 5-4.5) <span id="playthrough_totals_81"></span></h3>
-                <ul>
+                <h3 id="section_81"><a href="#section_81_col" data-toggle="collapse" class="btn btn-collapse"></a>Ending (Level 5-4.5)</a> <span id="playthrough_totals_81"></span></h3>
+                <ul id="section_81_col" class="collapse in">
                     <li data-id="playthrough_81_1"> During the final scene... </a>
                         <ul>
                             <li data-id="playthrough_81_1_1"> Kick the crime minister. (<b>Movie Night</b>)</a></li>
@@ -1191,5 +1110,27 @@
             </div>
         </div>
     </div>
+    <div class="hiddenfile">
+        <input name="upload" type="file" id="fileInput" />
+      </div>
+    
+      <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script>
+      <script src="js/jquery.highlight.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-66576837-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </body>
+    </html>
 </body>
 </html>
