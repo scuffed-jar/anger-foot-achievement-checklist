@@ -11,9 +11,13 @@ th { text-align: left;}
   font-size: 0.9em;
   padding-bottom: 0px;
 }
+
 .in_progress { color: #F31673; }
 .done { color: #26F42E; }
 .navbar { color: #F31673; text-align: center;}
+a { color: #FFCE51; }
+a:hover { color: #ffb700; }
+
 .navbar-inner {
     min-height: 40px;
     padding-right: 20px;
@@ -23,6 +27,7 @@ th { text-align: left;}
     background-repeat: repeat-x;
     border: 2px solid #FFCE51;
 }
+
 body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,9 +36,6 @@ body {
     color: #bbbbbb;
     background-color: #1a1919
 }
-a { color: #FFCE51; }
-a:hover { color: #ffb700; }
-
 
 @media print {
     body { color: #000; }
@@ -89,21 +91,9 @@ h3 {
   display: none;
   z-index: 1;
   bottom: 0;
-  /* The "Paper" bootstrap theme modifies the transition properties;
-  reset them to the default value to prevent ruining the fadeIn() */
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
-}
-.fadingbutton.back-to-top {
-  border-top-right-radius: 0;
-  border-right: 0;
-  right: 0;
-}
-.fadingbutton.togglehide {
-  border-top-left-radius: 0;
-  border-left: 0;
-  left: 0;
 }
 
 .btn-collapse {
@@ -117,12 +107,11 @@ h3 {
     outline: 0;
 }
 
-/* Icon when the collapsible content is shown */
 .btn-collapse:after {
   font-family: 'Glyphicons Halflings';
   content:"\e082";
 }
-/* Icon when the collapsible content is hidden */
+
 .btn-collapse.collapsed:after {
   content:"\e081";
 }
@@ -158,53 +147,3 @@ textarea#profileText {
   resize: vertical;
 }
 
-/* Work around what seems to be a bootstrap bug affecting the hover border on the right side of the add profile button */
-.input-group-btn:last-child>.btn:focus,
-.input-group-btn:last-child>.btn:hover {
-  z-index: 3;
-}
-
-/* Decorators for NG+/NG++ entries */
-.s_ng\+ .item_content:before {
-  content: "[NG+: ";
-}
-.s_ng\+\+ .item_content:before {
-  content: "[NG++: ";
-}
-.s_ng\+ .item_content:after,
-.s_ng\+\+ .item_content:after {
-  content: "]";
-}
-
-/* Styling for checklist filter categories and toggles */
-.btn-group.btn-group-vertical > .btn-group:not(:first-child) > .btn-group-vertical {
-  left: 0;
-  top: 100%;
-  display: none;
-  position: absolute;
-}
-.btn-group.btn-group-vertical:hover > .btn-group:not(:first-child) > .btn-group-vertical {
-  display: block;
-}
-.btn-group.btn-group-vertical > .btn-group:first-child > .btn-group-vertical.open > .btn {
-  z-index: 1;
-}
-.btn-group.btn-group-vertical > .btn-group:not(:first-child) > .btn-group-vertical > .btn {
-  z-index: 3;
-  text-align: left;
-}
-.btn-group.btn-group-vertical > .btn-group:not(:first-child) > .btn-group-vertical > .btn:hover {
-  z-index: 4;
-}
-.btn-group.btn-group-vertical:not(:last-child) > .btn-group:first-child > .btn-group-vertical > .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.btn-group.btn-group-vertical:not(:first-child) > .btn-group:first-child > .btn-group-vertical > .btn,
-.btn-group.btn-group-vertical > .btn-group:not(:first-child) > .btn-group-vertical > .btn:first-child {
-  border-top-left-radius: 0;
-}
-.btn-group.btn-group-vertical:not(:first-child) > .btn-group:first-child > .btn-group-vertical > .btn,
-.btn-group.btn-group-vertical:first-child:hover > .btn-group:first-child > .btn-group-vertical > .btn {
-  border-bottom-left-radius: 0;
-}
